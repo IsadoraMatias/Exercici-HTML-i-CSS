@@ -1,14 +1,19 @@
-body{
+/* body{
   height: 100%;
-  box-sizing: border-box;
-  }   
+  margin: 0;
+  }    */
 
   .container{
     max-width: 1200px;
     margin: auto;
     }
 
-header {
+    p {
+        text-align: center;
+        color: #010101;
+    }
+    
+  header {
     border: solid 10px black;
     margin-bottom: 10px;
     background-color: #283747;
@@ -17,16 +22,16 @@ header {
 .navbar {
     display: flex;
     justify-content: space-around;
-    
     padding: 10px;
+    border: solid 10px black;
     }
 
-.logo, .nav, .social {
+.logo, nav, .social {
     background-color: #FF5733;
     }
-
+    
 .banner {
-    border: solid 10px #cb4335;
+    border: solid 6px #cb4335;
     background-color: #dc7633; 
 }
 
@@ -36,20 +41,18 @@ header {
  gap: 10px; 
  border: solid 10px black;
  background-color: #283747;
- padding: 10px;  
+ padding: 80px;  
 }
 
 .articles {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 2fr 2fr;
-    padding: 10px;
-}
+    }
 
 .item1, .item2, .item3, .item4 {
     background-color: #85c1e9;
-    gap: 10px;
-}
+  }
 
 .item5 {
     grid-column: span 2;
@@ -59,19 +62,20 @@ header {
 .advertising {
     background-color:#cb4335;
     border: solid 10px black;
+   
 }
 
 .ad {
     margin: 10px;
     background-color:#dc7633;
-    padding: 10px;
-}
+  }
 
 footer {
     margin-top: 10px;
     border: solid 10px black;
     background-color: #f9e79f ; 
 }
+
 
 
 
