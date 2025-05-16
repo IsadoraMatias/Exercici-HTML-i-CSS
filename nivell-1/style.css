@@ -19,15 +19,15 @@
     background-color: #283747;
     }
 
-.navbar {
+  ul {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    border: solid 10px black;
     }
 
-.logo, nav, .social {
-    background-color: #FF5733;
+   li{
+      background-color: #FF5733;
+      list-style: none;  
     }
     
 .banner {
@@ -95,7 +95,7 @@ footer {
         }
     }
 
-    /* Exercici 3: SCom el cas anterior, ara hauràs de fer l'adaptació a versió Mobile. */
+    /* Exercici 3: Com el cas anterior, ara hauràs de fer l'adaptació a versió Mobile. */
 
     @media screen and (max-width: 400px) {
         .container{
