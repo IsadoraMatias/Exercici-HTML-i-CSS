@@ -104,7 +104,6 @@ footer {
   padding: 20px;
 }
 
-/* Exercici 2: Seguint amb el projecte anterior, fes la versió per tauleta */
 
 @media screen and (max-width: 700px) {
   .container {
@@ -118,6 +117,23 @@ footer {
   }
 
  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+main,
+  .articles {
     display: flex;
     flex-direction: column;
   }
