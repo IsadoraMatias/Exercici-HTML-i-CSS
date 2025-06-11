@@ -1,118 +1,126 @@
-/* body{
-  height: 100%;
+
+body {
   margin: 0;
-  }    */
-
-  .container{
-    max-width: 1200px;
-    margin: auto;
-    }
-
-    p {
-        text-align: center;
-        color: #010101;
-    }
-    
-  header {
-    border: solid 10px black;
-    margin-bottom: 10px;
-    background-color: #283747;
-    }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    }
-
-   li{
-      background-color: #FF5733;
-      list-style: none;  
-    }
-    
-.banner {
-    border: solid 6px #cb4335;
-    background-color: #dc7633; 
 }
 
-.main-content{
- display: grid;
- grid-template-columns: 3fr 1fr;
- gap: 10px; 
- border: solid 10px black;
- background-color: #283747;
- padding: 80px;  
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 10px;
+  background-color: #283747;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.logo, .nav, .social{
+  background-color: #cb4335;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.logo{
+    flex: 1;
+}
+
+.nav{
+    flex: 2;
+}
+
+.social{
+    flex: 1;
+}
+.banner {
+  background-color: #dc7633;
+  padding: 30px;
+  margin-bottom: 5px;
+}
+
+.banner-box {
+  background-color: #cb4335;
+  padding: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  }
+
+.main-content {
+  background-color: #283747;
+  padding: 40px;
 }
 
 .articles {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 2fr 2fr;
-    }
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
 
-.item1, .item2, .item3, .item4 {
-    background-color: #85c1e9;
-  }
+.article1,
+.article2,
+.article3,
+.article4,
+.navegation {
+  background-color: #85c1e9;
+  padding: 10px;
+}
 
-.item5 {
-    grid-column: span 2;
-    background-color:#2e86c1;
+.navegation {
+  grid-column: span 2;
+  background-color: #2e86c1;
 }
 
 .advertising {
-    background-color:#cb4335;
-    border: solid 10px black;
-   
-}
-
-.ad {
-    margin: 10px;
-    background-color:#dc7633;
+  background-color: #cb4335;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding:20px;
   }
 
+  .ad {
+  background-color: #f5d628;
+  padding: 10px;
+}
+
+.ad p{
+    margin: 0;
+}
+
 footer {
-    margin-top: 10px;
-    border: solid 10px black;
-    background-color: #f9e79f ; 
+  margin-top: 10px;
+  background-color: #f9e79f;
+  padding: 20px;
 }
 
 /* Exercici 2: Seguint amb el projecte anterior, fes la versió per tauleta */
 
-@media screen and (max-width: 600px) {
-    .container{
-        max-width: 600px;
-        margin: auto;
-        }
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
 
-        .navbar{
-            display: flex;
-            flex-direction: column;
-        }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
 
-        .main-content{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    /* Exercici 3: Com el cas anterior, ara hauràs de fer l'adaptació a versió Mobile. */
-
-    @media screen and (max-width: 400px) {
-        .container{
-            max-width: 600px;
-            margin: auto;
-            }
-    
-            .navbar{
-                display: flex;
-                flex-direction: column;
-            }
-    
-            .main-content, .articles {
-                display: flex;
-                flex-direction: column;
-            }
-    }
-
+ main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
